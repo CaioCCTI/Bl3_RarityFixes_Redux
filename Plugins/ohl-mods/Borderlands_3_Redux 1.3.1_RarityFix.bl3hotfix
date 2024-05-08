@@ -1,0 +1,65 @@
+
+###
+### Name: Redux Rarity Fixes
+### Version: 1.0.0
+### Author: DraktharrBlade
+### Contact: Email-me (Draktharrblade@gmail.com) or add/DM-me on Discord (Caio#6594).
+### Categories: Quality-of-Life, Rarities, Fixes, gear-changes
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+### CREDITS:
+### EpicNNG - For allowing to modify his files and for the support.
+### Songohran - For supporting and testing the changes.
+### KatcomelesbK - For the support and idealizing modifications into the game files.
+
+
+######## New Rarity Frames for Contraband and Pearlescent gear
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Streaming/Data/RarityData_MoxxiDrink.RarityData_MoxxiDrink,RarityFrameName,0,,Contraband
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common,RarityFrameName,0,,Pearl
+
+######## Pearlescent stats fix
+
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Rarity_Stats.DataTable_Weapon_Rarity_Stats,Common,DamageScale_6_44C1C8784B7991DCCCF68DA3127A53C0,0,,1.3
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Rarity_Stats.DataTable_Weapon_Rarity_Stats,Common,SpreadScale_8_D7376BDD4BB47794C6ECD995F0B66F07,0,,0.9
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Rarity_Stats.DataTable_Weapon_Rarity_Stats,Common,FireRateScale_11_10E7E12E4756B0EAD899BE8513F300AC,0,,1.1
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Rarity_Stats.DataTable_Weapon_Rarity_Stats,Common,ElementalChanceScale_14_7044338B492EDD3EB1E5E2A58FA9113B,0,,1.3
+
+####### Rarity Sort Fix
+
+### Pearlescent
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common,RaritySortValue,0,,9
+
+### Contraband
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Streaming/Data/RarityData_MoxxiDrink.RarityData_MoxxiDrink,RaritySortValue,0,,10
+
+### Legacy
+
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/GameData/Loot/RarityData/RarityData_00_Mission_NoBeam.RarityData_00_Mission_NoBeam,RaritySortValue,0,,8
+
+
+########################
+###### V.1.0.2 #########
+########################
+### Modify to the new rarity data (Legacy Gear)
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard3/Gear/GrenadeMods/Unique/Bloodsucker/Balance/InvBalD_GM_Bloodsucker.InvBalD_GM_Bloodsucker,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_06_Legacy.RarityData_06_Legacy"'
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Hyperion/_Shared/_Design/_Unique/Redistributor/Balance/Balance_SG_HYP_Redistributor.Balance_SG_HYP_Redistributor,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_06_Legacy.RarityData_06_Legacy"'
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/VaultCard/Gear/Weapons/Unique/BirdofPrey/Balance/Balance_SR_JAK_BirdofPrey.Balance_SR_JAK_BirdofPrey,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_06_Legacy.RarityData_06_Legacy"'
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Faisor/Balance/Balance_AR_VLA_Faisor.Balance_AR_VLA_Faisor,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_06_Legacy.RarityData_06_Legacy"'
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/MasterworkCrossbow/Balance/Balance_SR_HYP_Masterwork.Balance_SR_HYP_Masterwork,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_06_Legacy.RarityData_06_Legacy"'
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Sawhorse/Balance/Balance_AR_COV_Sawhorse_Epic.Balance_AR_COV_Sawhorse_Epic,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_06_Legacy.RarityData_06_Legacy"'
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Shields/_Design/_Uniques/WhiskeyTangoFoxtrot/Balance/InvBalD_Shield_Legendary_WhiskeyTangoFoxtrot.InvBalD_Shield_Legendary_WhiskeyTangoFoxtrot,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_06_Legacy.RarityData_06_Legacy"'
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/HeckelAndHyde/Heckle/Balance/Balance_PS_TOR_Heckle.Balance_PS_TOR_Heckle,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_06_Legacy.RarityData_06_Legacy"'
