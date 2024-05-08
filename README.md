@@ -3,7 +3,7 @@ Repository for rarity fixes of Borderlands 3 with Redux mod
 
 ## Changelog
 
-### V1.0.2 09/04/2023
+### V1.0.2 - 09/04/2023
 - Added a new rarity frame color to "Legacy" rarity gear, increased new rarities card saturation when anointed (note that you need to download the mod "All weapons can anoint", Link: https://github.com/BLCM/bl3mods/wiki/All-Weapons-Can-Anoint)
 
 ### V1.0.1 - 10/08/2023
